@@ -6,7 +6,7 @@ export const BucketContext = createContext({
             name: "Orange",
             details: "lorem ipsm jyosm",
             price: 40,
-            qnty: 1,
+            quantity: 1,
             id: 1
         },
 
@@ -14,7 +14,7 @@ export const BucketContext = createContext({
             name: "Mango",
             details: "lorem ipsm jyosm",
             price: 30,
-            qnty: 1,
+            quantity: 1,
             id: 2
         },
 
@@ -22,7 +22,7 @@ export const BucketContext = createContext({
             name: "Banana",
             details: "lorem ipsm jyosm",
             price: 20,
-            qnty: 1,
+            quantity: 1,
             id: 3
         }
     ],

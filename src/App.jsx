@@ -21,12 +21,11 @@ function App() {
   const removeItem = (id) => {
     if(bucketItem){
     setBucketItem((prev) => prev.filter((prevItem) => prevItem.id !== id))
-    console.log(bucketItem);
     }
   }
 
   useEffect(() => {
-    const total = bucketItem.reduce((acc, item) => acc + item.price * item.qnty, 0);
+    const total = bucketItem.reduce((acc, item) => acc + item.price * item.quantity, 0);
     setTotalBill(total);
   }, [bucketItem]);
 
@@ -34,7 +33,7 @@ function App() {
   
 
   return (
-    <BucketProvider value={{items, addToBucket, removeItem, bucketItem, setTotalBill, setBucketItem} } > 
+    <BucketProvider value={{items, addToBucket, removeItem, bucketItem, setBucketItem} } > 
       <div className=" flex justify-evenly">
         <div className="">
         {
