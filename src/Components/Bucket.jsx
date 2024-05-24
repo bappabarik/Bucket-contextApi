@@ -26,7 +26,10 @@ const Bucket = ({ Item }) => {
       setBucketItem(newProductInCart);
       }
     return (
-        <div className=' grid bg-orange-400 p-4 text-white gap-2'>
+        <div className=' flex flex-col bg-slate-400 p-4 text-white gap-2 rounded-md drop-shadow-lg '>
+            <div className="">
+              <img src={Item.image} alt="" width="250" height="250" />
+            </div>
             <h2 className=' font-bold'>{Item.name}</h2>
             <span> {Item.details} </span>
             <span> ${Item.price} </span>

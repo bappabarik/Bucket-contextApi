@@ -9,18 +9,18 @@ function App() {
 
   return (
     
-      <div className=" flex justify-evenly h-screen">
-        <div className="">
+      <>
+        <div className=" grid md:grid-cols-5 gap-6 items-center justify-center py-24 px-8">
         {
           items.map((item) => (
-            <div className=" m-2 flex w-full justify-start items-center" key={item.id}>
+            <div className=" flex  justify-center items-center" key={item.id}>
               <BucketItems item={item} />
             </div>
           )
           )
         }
         </div>
-      </div>
+      </>
     
   )
 }

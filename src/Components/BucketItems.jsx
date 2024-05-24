@@ -4,7 +4,8 @@ import { useBucket } from '../Contexts';
 const BucketItems = ({item}) => {
     const { addToBucket } = useBucket()
     return (
-        <div className=' flex flex-col bg-orange-400 p-4 text-white gap-2'>
+        <div className=' flex flex-col bg-slate-400 p-3 text-white gap-2 rounded-md drop-shadow-2xl '>
+            <div className=""> <img src={item.image} alt="" width="250" height="250" /> </div>
             <h2 className=' font-bold'>{item.name}</h2>
             <span> {item.details} </span>
             <span> ${item.price} </span>

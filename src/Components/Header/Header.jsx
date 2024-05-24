@@ -6,7 +6,7 @@ const Header = () => {
     const { totalItems } = useBucket()
     return (
         <>
-            <nav className=' w-full bg-slate-400 flex p-4 justify-evenly items-center'>
+            <nav className=' w-full bg-slate-400 flex p-4 justify-evenly items-center z-10 fixed'>
                 <Link
                 to="/"
                 >
