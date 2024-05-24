@@ -26,7 +26,7 @@ const Bucket = ({ Item }) => {
       setBucketItem(newProductInCart);
       }
     return (
-        <div className=' flex flex-col bg-slate-400 p-4 text-white gap-2 rounded-md drop-shadow-lg '>
+        <div className=' flex flex-col bg-gray-500 p-4 text-white gap-2 rounded-md drop-shadow-lg '>
             <div className="">
               <img src={Item.image} alt="" width="250" height="250" />
             </div>
@@ -34,7 +34,7 @@ const Bucket = ({ Item }) => {
             <span> {Item.details} </span>
             <span> ${Item.price} </span>
             <span> Qnty: <span className=' cursor-pointer p-[5px] pt-[1px] text-center bg-white text-black rounded-lg' onClick={() => decreaseQnty(Item)}>{"<"}</span> {Item.quantity} <span className=' cursor-pointer p-[5px] pt-[1px] text-center bg-white text-black rounded-lg' onClick={() => increaseQnty(Item)}>{">"}</span></span>
-            <button className=' bg-green-700 p-1 rounded-md' onClick={() => removeItem(Item.id)}>remove</button>
+            <button className=' mt-2 bg-slate-100 text-black p-1 rounded-md' onClick={() => removeItem(Item.id)}>remove</button>
         </div>
     );
 }
